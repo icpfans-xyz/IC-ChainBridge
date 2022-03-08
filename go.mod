@@ -1,6 +1,6 @@
 module github.com/ChainSafe/ChainBridge
 
-go 1.15
+go 1.16
 
 require (
 	github.com/ChainSafe/chainbridge-substrate-events v0.0.0-20200715141113-87198532025e
@@ -11,8 +11,13 @@ require (
 	github.com/deckarep/golang-set v1.7.1 // indirect
 	github.com/ethereum/go-ethereum v1.9.25
 	github.com/gorilla/websocket v1.4.2 // indirect
+	github.com/icpfans-xyz/agent-go v0.0.0-20220308103158-f618843cfb34
 	github.com/prometheus/client_golang v1.4.1
+	github.com/prometheus/common v0.9.1
 	github.com/rs/cors v1.7.0 // indirect
 	github.com/stretchr/testify v1.7.0
 	github.com/urfave/cli/v2 v2.3.0
 )
+
+// replace github.com/icpfans-xyz/agent-go => ../agent-go
+replace github.com/ChainSafe/chainbridge-utils => github.com/qywang2012/chainbridge-utils v1.0.7-0.20220308103336-003f9a1ce3ab
